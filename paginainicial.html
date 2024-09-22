@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alan kardec</title>
+    <title>Página Moderna e Responsiva</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>oi fudido</h1>
-    <img src="imagens/alan.jpg" alt="alan kardec">
-    <table>
-        <thead>
-            <tr>
-                <th>Hortaliça</th>
-                <th>Unidade</th>
-                <th>Preço (R$)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Alface</td>
-                <td>Unidade</td>
-                <td>2,50</td>
-            </tr>
-            <tr>
-                <td>Tomate</td>
-                <td>Kg</td>
-                <td>5,99</td>
-            </tr>
-            <tr>
-                <td>Cenoura</td>
-                <td>Kg</td>
-                <td>3,75</td>
-            </tr>
-        </tbody>
-    </table>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        // Menu toggle para dispositivos móveis
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+            menuToggle.classList.toggle('toggle');
+        });
+    </script>
 </body>
 </html>
